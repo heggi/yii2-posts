@@ -1,0 +1,25 @@
+{
+    "name": "heggi/yii2-posts",
+    "description": "Yii2 Posts extension",
+    "type": "yii2-extension",
+    "keywords": ["yii2","extension","posts"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "heggi",
+            "email": "heggi@fhead.org"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "~2.0.0",
+        "2amigos/yii2-ckeditor-widget": "^2.1.1",
+        "mihaildev/yii2-elfinder": "^1.2",
+        "heggi/yii2-slugwidget": "*",
+        "heggi/yii2-files": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "heggi\\yii2posts\\": ""
+        }
+    }
+}

@@ -13,7 +13,6 @@ $module = Yii::$app->controller->module;
 ?>
 
 <div class="row" style="padding-bottom: 50px;">
-    <?php var_dump($model->getErrors()) ?>
     <?php $form = ActiveForm::begin(['options' => ['enctype' => 'multipart/form-data']]); ?>
         <div class="col-xs-9">
 

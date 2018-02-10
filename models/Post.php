@@ -26,7 +26,7 @@ class Post extends ActiveRecord {
             [['content'], 'string'],
             [['module', 'slug'], 'string', 'max' => 100],
             [['title', 'excerpt'], 'string', 'max' => 255],
-            [['module', 'slug'], 'unique', 'targetAttribute' => ['module', 'slug']],
+            [['slug'], 'unique', 'targetAttribute' => ['module', 'slug']],
             [['file'], 'each', 'rule' => ['file']],
             [['deleteFile'], 'each', 'rule' => ['integer']],
             [['files'], 'each', 'rule' => ['file', 'maxFiles' => 20]],

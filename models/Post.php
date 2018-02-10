@@ -53,15 +53,10 @@ class Post extends ActiveRecord {
     }
 
     public function behaviors() {
-        $module = Yii::$app->controller->module;
-        $behavoirs = [
+        return [
             TimestampBehavior::className(),
+            \heggi\yii2files\behaviors\FilesBehave::className(),
         ];
-        if(!empty($module->files) && is_array($module->files)) {
-            $behavoirs[] = \heggi\yii2files\behaviors\FilesBehave::className();
-        }
-
-        return $behavoirs;
     }
 
     public function uploadFiles() {
